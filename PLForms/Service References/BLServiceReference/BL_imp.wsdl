@@ -1,0 +1,1398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="BL_imp" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://schemas.datacontract.org/2004/07/BE" />
+      <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xs:import namespace="http://schemas.datacontract.org/2004/07/System" />
+      <xs:element name="InsertClient">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/BE" minOccurs="0" name="c" nillable="true" type="q1:Client" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="InsertClientResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="InsertClientResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="InsertCar">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/BE" minOccurs="0" name="c" nillable="true" type="q2:Car" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="InsertCarResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="InsertCarResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="InsertRenting">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/BE" minOccurs="0" name="r" nillable="true" type="q3:Renting" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="InsertRentingResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="InsertRentingResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="InsertFault">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/BE" minOccurs="0" name="f" nillable="true" type="q4:Fault" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="InsertFaultResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="InsertFaultResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="InsertCar_Fault">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/BE" minOccurs="0" name="cf" nillable="true" type="q5:Car_Fault" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="InsertCar_FaultResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="InsertCar_FaultResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="DeleteClient">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="id" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="DeleteClientResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="DeleteClientResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="DeleteCar">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="id" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="DeleteCarResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="DeleteCarResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="DeleteRenting">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="id" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="DeleteRentingResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="DeleteRentingResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="DeleteFault">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="id" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="DeleteFaultResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="DeleteFaultResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="DeleteCar_Fault">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="id" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="DeleteCar_FaultResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="DeleteCar_FaultResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="UpdateClient">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/BE" minOccurs="0" name="c" nillable="true" type="q6:Client" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="UpdateClientResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="UpdateClientResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="UpdateCar">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/BE" minOccurs="0" name="c" nillable="true" type="q7:Car" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="UpdateCarResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="UpdateCarResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="UpdateRenting">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/BE" minOccurs="0" name="r" nillable="true" type="q8:Renting" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="UpdateRentingResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="UpdateRentingResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="UpdateFault">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/BE" minOccurs="0" name="f" nillable="true" type="q9:Fault" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="UpdateFaultResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="UpdateFaultResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="UpdateCar_Fault">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/BE" minOccurs="0" name="cf" nillable="true" type="q10:Car_Fault" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="UpdateCar_FaultResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="UpdateCar_FaultResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="SelectAllClients">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="SelectAllClientsResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/BE" minOccurs="0" name="SelectAllClientsResult" nillable="true" type="q11:ArrayOfClient" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="SelectAllCars">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="SelectAllCarsResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/BE" minOccurs="0" name="SelectAllCarsResult" nillable="true" type="q12:ArrayOfCar" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="SelectAllRentings">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="SelectAllRentingsResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/BE" minOccurs="0" name="SelectAllRentingsResult" nillable="true" type="q13:ArrayOfRenting" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="SelectAllFaults">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="SelectAllFaultsResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/BE" minOccurs="0" name="SelectAllFaultsResult" nillable="true" type="q14:ArrayOfFault" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="SelectAllCar_Faults">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="SelectAllCar_FaultsResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/BE" minOccurs="0" name="SelectAllCar_FaultsResult" nillable="true" type="q15:ArrayOfCar_Fault" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="SelectClient">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="clientId" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="SelectClientResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/BE" minOccurs="0" name="SelectClientResult" nillable="true" type="q16:Client" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="SelectCar">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="carId" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="SelectCarResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/BE" minOccurs="0" name="SelectCarResult" nillable="true" type="q17:Car" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="SelectRenting">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="rentingId" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="SelectRentingResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/BE" minOccurs="0" name="SelectRentingResult" nillable="true" type="q18:Renting" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="SelectFault">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="faultId" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="SelectFaultResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/BE" minOccurs="0" name="SelectFaultResult" nillable="true" type="q19:Fault" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="SelectCar_Fault">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="car_faultId" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="SelectCar_FaultResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/BE" minOccurs="0" name="SelectCar_FaultResult" nillable="true" type="q20:Car_Fault" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetRentingForClient">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="clientId" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetRentingForClientResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/BE" minOccurs="0" name="GetRentingForClientResult" nillable="true" type="q21:ArrayOfRenting" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ExpensesForClient">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="clientId" type="xs:int" />
+            <xs:element minOccurs="0" name="dateBegin" type="xs:dateTime" />
+            <xs:element minOccurs="0" name="dateEnd" type="xs:dateTime" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ExpensesForClientResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="ExpensesForClientResult" type="xs:double" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="EarningsForCar">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="carId" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="EarningsForCarResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="EarningsForCarResult" type="xs:double" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="FaultsNamesOrderByFrequency">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="FaultsNamesOrderByFrequencyResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q22="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="FaultsNamesOrderByFrequencyResult" nillable="true" type="q22:ArrayOfstring" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="FindRenting">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="match" nillable="true" type="q23:PredicateOfRentingaguBxXxj" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="FindRentingResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/BE" minOccurs="0" name="FindRentingResult" nillable="true" type="q24:ArrayOfClient" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ThereWasFault">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="rentingId" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ThereWasFaultResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="ThereWasFaultResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="FinalRentingPrice">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="rentingId" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="FinalRentingPriceResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="FinalRentingPriceResult" type="xs:double" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="RentingEnding">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="rentId" type="xs:int" />
+            <xs:element minOccurs="0" name="dateEnd" type="xs:dateTime" />
+            <xs:element minOccurs="0" name="ke" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="RentingEndingResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="RentingEndingResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="IsYoungDriver">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="clientId" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="IsYoungDriverResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="IsYoungDriverResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="IsNewDriver">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="clientId" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="IsNewDriverResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="IsNewDriverResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <xs:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="anyType" nillable="true" type="xs:anyType" />
+      <xs:element name="anyURI" nillable="true" type="xs:anyURI" />
+      <xs:element name="base64Binary" nillable="true" type="xs:base64Binary" />
+      <xs:element name="boolean" nillable="true" type="xs:boolean" />
+      <xs:element name="byte" nillable="true" type="xs:byte" />
+      <xs:element name="dateTime" nillable="true" type="xs:dateTime" />
+      <xs:element name="decimal" nillable="true" type="xs:decimal" />
+      <xs:element name="double" nillable="true" type="xs:double" />
+      <xs:element name="float" nillable="true" type="xs:float" />
+      <xs:element name="int" nillable="true" type="xs:int" />
+      <xs:element name="long" nillable="true" type="xs:long" />
+      <xs:element name="QName" nillable="true" type="xs:QName" />
+      <xs:element name="short" nillable="true" type="xs:short" />
+      <xs:element name="string" nillable="true" type="xs:string" />
+      <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte" />
+      <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt" />
+      <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong" />
+      <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort" />
+      <xs:element name="char" nillable="true" type="tns:char" />
+      <xs:simpleType name="char">
+        <xs:restriction base="xs:int" />
+      </xs:simpleType>
+      <xs:element name="duration" nillable="true" type="tns:duration" />
+      <xs:simpleType name="duration">
+        <xs:restriction base="xs:duration">
+          <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?" />
+          <xs:minInclusive value="-P10675199DT2H48M5.4775808S" />
+          <xs:maxInclusive value="P10675199DT2H48M5.4775807S" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:element name="guid" nillable="true" type="tns:guid" />
+      <xs:simpleType name="guid">
+        <xs:restriction base="xs:string">
+          <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:attribute name="FactoryType" type="xs:QName" />
+      <xs:attribute name="Id" type="xs:ID" />
+      <xs:attribute name="Ref" type="xs:IDREF" />
+    </xs:schema>
+    <xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/BE" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/BE" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xs:complexType name="Client">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BirthDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="CreditCartNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FaultResponsible" type="xs:int" />
+          <xs:element minOccurs="0" name="IdNumber" type="xs:int" />
+          <xs:element minOccurs="0" name="IdTeoudaZeout" type="xs:int" />
+          <xs:element minOccurs="0" name="LicenseDrivingDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Client" nillable="true" type="tns:Client" />
+      <xs:complexType name="Car">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BranchAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Cat" type="tns:Category" />
+          <xs:element minOccurs="0" name="DoorsNumber" type="xs:int" />
+          <xs:element minOccurs="0" name="IdNumber" type="xs:int" />
+          <xs:element minOccurs="0" name="Kilometers" type="xs:int" />
+          <xs:element minOccurs="0" name="ManufactureDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Name" type="tns:CarType" />
+          <xs:element minOccurs="0" name="PassengersNumber" type="xs:int" />
+          <xs:element minOccurs="0" name="RegistrationNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TransmissionType" type="tns:Transmission" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Car" nillable="true" type="tns:Car" />
+      <xs:simpleType name="Category">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="A">
+            <xs:annotation>
+              <xs:appinfo>
+                <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">100</EnumerationValue>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="B">
+            <xs:annotation>
+              <xs:appinfo>
+                <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">60</EnumerationValue>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="C">
+            <xs:annotation>
+              <xs:appinfo>
+                <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">30</EnumerationValue>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="D">
+            <xs:annotation>
+              <xs:appinfo>
+                <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">20</EnumerationValue>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:enumeration>
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:element name="Category" nillable="true" type="tns:Category" />
+      <xs:complexType name="CarType">
+        <xs:annotation>
+          <xs:appinfo>
+            <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:sequence />
+      </xs:complexType>
+      <xs:element name="CarType" nillable="true" type="tns:CarType" />
+      <xs:simpleType name="Transmission">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="Manual" />
+          <xs:enumeration value="Automatic" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:element name="Transmission" nillable="true" type="tns:Transmission" />
+      <xs:complexType name="Renting">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CarId" type="xs:int" />
+          <xs:element minOccurs="0" name="DriversAllowed" type="tns:Drivers" />
+          <xs:element minOccurs="0" name="DriversNumber" type="xs:int" />
+          <xs:element minOccurs="0" name="IdNumber" type="xs:int" />
+          <xs:element minOccurs="0" name="KilometersAtRentalEnd" type="xs:int" />
+          <xs:element minOccurs="0" name="KilometersAtRentalStart" type="xs:int" />
+          <xs:element minOccurs="0" name="RentalEndDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="RentalPriceDaily" type="xs:double" />
+          <xs:element minOccurs="0" name="RentalStartDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ReturnedWithFault" type="xs:boolean" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Renting" nillable="true" type="tns:Renting" />
+      <xs:complexType name="Drivers">
+        <xs:annotation>
+          <xs:appinfo>
+            <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:sequence />
+      </xs:complexType>
+      <xs:element name="Drivers" nillable="true" type="tns:Drivers" />
+      <xs:complexType name="Fault">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IdNumber" type="xs:int" />
+          <xs:element minOccurs="0" name="PreferredGarage" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RepairCost" type="xs:double" />
+          <xs:element minOccurs="0" name="Responsible" type="xs:boolean" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Fault" nillable="true" type="tns:Fault" />
+      <xs:complexType name="Car_Fault">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CarId" type="xs:int" />
+          <xs:element minOccurs="0" name="FaultDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="FaultId" type="xs:int" />
+          <xs:element minOccurs="0" name="IdNumber" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Car_Fault" nillable="true" type="tns:Car_Fault" />
+      <xs:complexType name="ArrayOfClient">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="Client" nillable="true" type="tns:Client" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfClient" nillable="true" type="tns:ArrayOfClient" />
+      <xs:complexType name="ArrayOfCar">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="Car" nillable="true" type="tns:Car" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfCar" nillable="true" type="tns:ArrayOfCar" />
+      <xs:complexType name="ArrayOfRenting">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="Renting" nillable="true" type="tns:Renting" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfRenting" nillable="true" type="tns:ArrayOfRenting" />
+      <xs:complexType name="ArrayOfFault">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="Fault" nillable="true" type="tns:Fault" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfFault" nillable="true" type="tns:ArrayOfFault" />
+      <xs:complexType name="ArrayOfCar_Fault">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="Car_Fault" nillable="true" type="tns:Car_Fault" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfCar_Fault" nillable="true" type="tns:ArrayOfCar_Fault" />
+    </xs:schema>
+    <xs:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/Arrays" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="ArrayOfstring">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfstring" nillable="true" type="tns:ArrayOfstring" />
+    </xs:schema>
+    <xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/System" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/System" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xs:complexType name="PredicateOfRentingaguBxXxj">
+        <xs:annotation>
+          <xs:appinfo>
+            <GenericType Name="PredicateOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/System" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+              <GenericParameter Name="Renting" Namespace="http://schemas.datacontract.org/2004/07/BE" />
+            </GenericType>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:MulticastDelegate" />
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="PredicateOfRentingaguBxXxj" nillable="true" type="tns:PredicateOfRentingaguBxXxj" />
+      <xs:complexType name="MulticastDelegate">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:Delegate" />
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="MulticastDelegate" nillable="true" type="tns:MulticastDelegate" />
+      <xs:complexType name="Delegate">
+        <xs:sequence>
+          <xs:any minOccurs="0" maxOccurs="unbounded" namespace="##local" processContents="skip" />
+        </xs:sequence>
+        <xs:attribute ref="ser:FactoryType" />
+      </xs:complexType>
+      <xs:element name="Delegate" nillable="true" type="tns:Delegate" />
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="BlServiceContract_InsertClient_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertClient" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_InsertClient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertClientResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_InsertCar_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCar" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_InsertCar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCarResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_InsertRenting_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertRenting" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_InsertRenting_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertRentingResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_InsertFault_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertFault" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_InsertFault_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertFaultResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_InsertCar_Fault_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCar_Fault" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_InsertCar_Fault_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCar_FaultResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_DeleteClient_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteClient" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_DeleteClient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteClientResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_DeleteCar_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCar" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_DeleteCar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCarResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_DeleteRenting_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRenting" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_DeleteRenting_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRentingResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_DeleteFault_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFault" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_DeleteFault_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFaultResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_DeleteCar_Fault_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCar_Fault" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_DeleteCar_Fault_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCar_FaultResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_UpdateClient_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateClient" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_UpdateClient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateClientResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_UpdateCar_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCar" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_UpdateCar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCarResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_UpdateRenting_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRenting" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_UpdateRenting_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRentingResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_UpdateFault_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateFault" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_UpdateFault_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateFaultResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_UpdateCar_Fault_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCar_Fault" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_UpdateCar_Fault_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCar_FaultResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_SelectAllClients_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllClients" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_SelectAllClients_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllClientsResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_SelectAllCars_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllCars" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_SelectAllCars_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllCarsResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_SelectAllRentings_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllRentings" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_SelectAllRentings_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllRentingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_SelectAllFaults_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllFaults" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_SelectAllFaults_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllFaultsResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_SelectAllCar_Faults_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllCar_Faults" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_SelectAllCar_Faults_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllCar_FaultsResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_SelectClient_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectClient" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_SelectClient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectClientResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_SelectCar_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCar" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_SelectCar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCarResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_SelectRenting_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectRenting" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_SelectRenting_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectRentingResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_SelectFault_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectFault" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_SelectFault_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectFaultResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_SelectCar_Fault_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCar_Fault" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_SelectCar_Fault_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCar_FaultResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_GetRentingForClient_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRentingForClient" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_GetRentingForClient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRentingForClientResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_ExpensesForClient_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExpensesForClient" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_ExpensesForClient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExpensesForClientResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_EarningsForCar_InputMessage">
+    <wsdl:part name="parameters" element="tns:EarningsForCar" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_EarningsForCar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EarningsForCarResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_FaultsNamesOrderByFrequency_InputMessage">
+    <wsdl:part name="parameters" element="tns:FaultsNamesOrderByFrequency" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_FaultsNamesOrderByFrequency_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FaultsNamesOrderByFrequencyResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_FindRenting_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindRenting" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_FindRenting_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindRentingResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_ThereWasFault_InputMessage">
+    <wsdl:part name="parameters" element="tns:ThereWasFault" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_ThereWasFault_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ThereWasFaultResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_FinalRentingPrice_InputMessage">
+    <wsdl:part name="parameters" element="tns:FinalRentingPrice" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_FinalRentingPrice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FinalRentingPriceResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_RentingEnding_InputMessage">
+    <wsdl:part name="parameters" element="tns:RentingEnding" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_RentingEnding_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RentingEndingResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_IsYoungDriver_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsYoungDriver" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_IsYoungDriver_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsYoungDriverResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_IsNewDriver_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsNewDriver" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_IsNewDriver_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsNewDriverResponse" />
+  </wsdl:message>
+  <wsdl:portType name="BlServiceContract">
+    <wsdl:operation name="InsertClient">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/InsertClient" message="tns:BlServiceContract_InsertClient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/InsertClientResponse" message="tns:BlServiceContract_InsertClient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCar">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/InsertCar" message="tns:BlServiceContract_InsertCar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/InsertCarResponse" message="tns:BlServiceContract_InsertCar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertRenting">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/InsertRenting" message="tns:BlServiceContract_InsertRenting_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/InsertRentingResponse" message="tns:BlServiceContract_InsertRenting_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertFault">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/InsertFault" message="tns:BlServiceContract_InsertFault_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/InsertFaultResponse" message="tns:BlServiceContract_InsertFault_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCar_Fault">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/InsertCar_Fault" message="tns:BlServiceContract_InsertCar_Fault_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/InsertCar_FaultResponse" message="tns:BlServiceContract_InsertCar_Fault_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteClient">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/DeleteClient" message="tns:BlServiceContract_DeleteClient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/DeleteClientResponse" message="tns:BlServiceContract_DeleteClient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCar">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/DeleteCar" message="tns:BlServiceContract_DeleteCar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/DeleteCarResponse" message="tns:BlServiceContract_DeleteCar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRenting">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/DeleteRenting" message="tns:BlServiceContract_DeleteRenting_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/DeleteRentingResponse" message="tns:BlServiceContract_DeleteRenting_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFault">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/DeleteFault" message="tns:BlServiceContract_DeleteFault_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/DeleteFaultResponse" message="tns:BlServiceContract_DeleteFault_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCar_Fault">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/DeleteCar_Fault" message="tns:BlServiceContract_DeleteCar_Fault_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/DeleteCar_FaultResponse" message="tns:BlServiceContract_DeleteCar_Fault_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateClient">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/UpdateClient" message="tns:BlServiceContract_UpdateClient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/UpdateClientResponse" message="tns:BlServiceContract_UpdateClient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCar">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/UpdateCar" message="tns:BlServiceContract_UpdateCar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/UpdateCarResponse" message="tns:BlServiceContract_UpdateCar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRenting">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/UpdateRenting" message="tns:BlServiceContract_UpdateRenting_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/UpdateRentingResponse" message="tns:BlServiceContract_UpdateRenting_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFault">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/UpdateFault" message="tns:BlServiceContract_UpdateFault_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/UpdateFaultResponse" message="tns:BlServiceContract_UpdateFault_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCar_Fault">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/UpdateCar_Fault" message="tns:BlServiceContract_UpdateCar_Fault_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/UpdateCar_FaultResponse" message="tns:BlServiceContract_UpdateCar_Fault_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllClients">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/SelectAllClients" message="tns:BlServiceContract_SelectAllClients_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/SelectAllClientsResponse" message="tns:BlServiceContract_SelectAllClients_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllCars">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/SelectAllCars" message="tns:BlServiceContract_SelectAllCars_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/SelectAllCarsResponse" message="tns:BlServiceContract_SelectAllCars_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllRentings">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/SelectAllRentings" message="tns:BlServiceContract_SelectAllRentings_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/SelectAllRentingsResponse" message="tns:BlServiceContract_SelectAllRentings_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllFaults">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/SelectAllFaults" message="tns:BlServiceContract_SelectAllFaults_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/SelectAllFaultsResponse" message="tns:BlServiceContract_SelectAllFaults_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllCar_Faults">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/SelectAllCar_Faults" message="tns:BlServiceContract_SelectAllCar_Faults_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/SelectAllCar_FaultsResponse" message="tns:BlServiceContract_SelectAllCar_Faults_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectClient">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/SelectClient" message="tns:BlServiceContract_SelectClient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/SelectClientResponse" message="tns:BlServiceContract_SelectClient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectCar">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/SelectCar" message="tns:BlServiceContract_SelectCar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/SelectCarResponse" message="tns:BlServiceContract_SelectCar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectRenting">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/SelectRenting" message="tns:BlServiceContract_SelectRenting_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/SelectRentingResponse" message="tns:BlServiceContract_SelectRenting_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectFault">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/SelectFault" message="tns:BlServiceContract_SelectFault_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/SelectFaultResponse" message="tns:BlServiceContract_SelectFault_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectCar_Fault">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/SelectCar_Fault" message="tns:BlServiceContract_SelectCar_Fault_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/SelectCar_FaultResponse" message="tns:BlServiceContract_SelectCar_Fault_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRentingForClient">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/GetRentingForClient" message="tns:BlServiceContract_GetRentingForClient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/GetRentingForClientResponse" message="tns:BlServiceContract_GetRentingForClient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExpensesForClient">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/ExpensesForClient" message="tns:BlServiceContract_ExpensesForClient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/ExpensesForClientResponse" message="tns:BlServiceContract_ExpensesForClient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EarningsForCar">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/EarningsForCar" message="tns:BlServiceContract_EarningsForCar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/EarningsForCarResponse" message="tns:BlServiceContract_EarningsForCar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FaultsNamesOrderByFrequency">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/FaultsNamesOrderByFrequency" message="tns:BlServiceContract_FaultsNamesOrderByFrequency_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/FaultsNamesOrderByFrequencyResponse" message="tns:BlServiceContract_FaultsNamesOrderByFrequency_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FindRenting">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/FindRenting" message="tns:BlServiceContract_FindRenting_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/FindRentingResponse" message="tns:BlServiceContract_FindRenting_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ThereWasFault">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/ThereWasFault" message="tns:BlServiceContract_ThereWasFault_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/ThereWasFaultResponse" message="tns:BlServiceContract_ThereWasFault_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FinalRentingPrice">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/FinalRentingPrice" message="tns:BlServiceContract_FinalRentingPrice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/FinalRentingPriceResponse" message="tns:BlServiceContract_FinalRentingPrice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RentingEnding">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/RentingEnding" message="tns:BlServiceContract_RentingEnding_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/RentingEndingResponse" message="tns:BlServiceContract_RentingEnding_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsYoungDriver">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/IsYoungDriver" message="tns:BlServiceContract_IsYoungDriver_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/IsYoungDriverResponse" message="tns:BlServiceContract_IsYoungDriver_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsNewDriver">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/IsNewDriver" message="tns:BlServiceContract_IsNewDriver_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/IsNewDriverResponse" message="tns:BlServiceContract_IsNewDriver_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_BlServiceContract" type="tns:BlServiceContract">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertClient">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/InsertClient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCar">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/InsertCar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertRenting">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/InsertRenting" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertFault">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/InsertFault" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCar_Fault">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/InsertCar_Fault" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteClient">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/DeleteClient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCar">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/DeleteCar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRenting">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/DeleteRenting" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFault">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/DeleteFault" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCar_Fault">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/DeleteCar_Fault" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateClient">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/UpdateClient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCar">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/UpdateCar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRenting">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/UpdateRenting" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFault">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/UpdateFault" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCar_Fault">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/UpdateCar_Fault" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllClients">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/SelectAllClients" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllCars">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/SelectAllCars" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllRentings">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/SelectAllRentings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllFaults">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/SelectAllFaults" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllCar_Faults">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/SelectAllCar_Faults" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectClient">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/SelectClient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectCar">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/SelectCar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectRenting">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/SelectRenting" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectFault">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/SelectFault" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectCar_Fault">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/SelectCar_Fault" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRentingForClient">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/GetRentingForClient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExpensesForClient">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/ExpensesForClient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EarningsForCar">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/EarningsForCar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FaultsNamesOrderByFrequency">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/FaultsNamesOrderByFrequency" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindRenting">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/FindRenting" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThereWasFault">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/ThereWasFault" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinalRentingPrice">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/FinalRentingPrice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RentingEnding">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/RentingEnding" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsYoungDriver">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/IsYoungDriver" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsNewDriver">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/IsNewDriver" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BL_imp">
+    <wsdl:port name="BasicHttpBinding_BlServiceContract" binding="tns:BasicHttpBinding_BlServiceContract">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/BL_WcfService/Service1/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cars>
+  <car>
+    <idNumber>1</idNumber>
+    <registrationNumber>123DE45</registrationNumber>
+    <manufactureDate>2015-01-27T17:58:00.236+02:00</manufactureDate>
+    <name>
+      <mark>peugeot</mark>
+      <model>406</model>
+      <volumecc>120</volumecc>
+      <color>bleu</color>
+    </name>
+    <transmissionType>Manual</transmissionType>
+    <passengersNumber>5</passengersNumber>
+    <doorsNumber>9</doorsNumber>
+    <kilometers>15</kilometers>
+    <branchAddress>dakar</branchAddress>
+    <category>D</category>
+  </car>
+  <car>
+    <idNumber>3</idNumber>
+    <registrationNumber>852GR46</registrationNumber>
+    <manufactureDate>27/01/2015 18:42:59</manufactureDate>
+    <name>
+      <mark>opel</mark>
+      <model>astra</model>
+      <volumecc>45</volumecc>
+      <color>white</color>
+    </name>
+    <transmissionType>Manual</transmissionType>
+    <passengersNumber>7</passengersNumber>
+    <doorsNumber>7</doorsNumber>
+    <kilometers>46</kilometers>
+    <branchAddress>jeru</branchAddress>
+    <category>D</category>
+  </car>
+  <car>
+    <idNumber>4</idNumber>
+    <registrationNumber>159GT56</registrationNumber>
+    <manufactureDate>2013-07-18T11:12:54</manufactureDate>
+    <name>
+      <mark>renaul</mark>
+      <model>5</model>
+      <volumecc>50</volumecc>
+      <color>red</color>
+    </name>
+    <transmissionType>Manual</transmissionType>
+    <passengersNumber>5</passengersNumber>
+    <doorsNumber>4</doorsNumber>
+    <kilometers>100</kilometers>
+    <branchAddress>har nof</branchAddress>
+    <category>D</category>
+  </car>
+  <car>
+    <idNumber>6</idNumber>
+    <registrationNumber>456AZ12</registrationNumber>
+    <manufactureDate>2008-01-28T12:34:43</manufactureDate>
+    <name>
+      <mark>mazda</mark>
+      <model>406</model>
+      <volumecc>250</volumecc>
+      <color>gold</color>
+    </name>
+    <transmissionType>Manual</transmissionType>
+    <passengersNumber>5</passengersNumber>
+    <doorsNumber>5</doorsNumber>
+    <kilometers>100</kilometers>
+    <branchAddress>givat mordechai</branchAddress>
+    <category>C</category>
+  </car>
+</cars>

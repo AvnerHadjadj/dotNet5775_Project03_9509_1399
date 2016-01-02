@@ -1,0 +1,77 @@
+C:\Users\spiderman\Documents\Visual Studio 2012\Projects\Csharp\dotNet5775_Project\DS\obj\Debug\DS.csprojResolveAssemblyReference.cache
+C:\Users\spiderman\Documents\Visual Studio 2012\Projects\Csharp\dotNet5775_Project\DS\bin\Debug\DS.dll
+C:\Users\spiderman\Documents\Visual Studio 2012\Projects\Csharp\dotNet5775_Project\DS\bin\Debug\DS.pdb
+C:\Users\spiderman\Documents\Visual Studio 2012\Projects\Csharp\dotNet5775_Project\DS\bin\Debug\BE.dll
+C:\Users\spiderman\Documents\Visual Studio 2012\Projects\Csharp\dotNet5775_Project\DS\bin\Debug\BE.pdb
+C:\Users\spiderman\Documents\Visual Studio 2012\Projects\Csharp\dotNet5775_Project\DS\obj\Debug\DS.dll
+C:\Users\spiderman\Documents\Visual Studio 2012\Projects\Csharp\dotNet5775_Project\DS\obj\Debug\DS.pdb
+C:\Users\sam\Downloads\Projetv3\DS\bin\Debug\DS.dll
+C:\Users\sam\Downloads\Projetv3\DS\bin\Debug\DS.pdb
+C:\Users\sam\Downloads\Projetv3\DS\bin\Debug\BE.dll
+C:\Users\sam\Downloads\Projetv3\DS\bin\Debug\BE.pdb
+C:\Users\sam\Downloads\Projetv3\DS\obj\Debug\DS.csprojResolveAssemblyReference.cache
+C:\Users\sam\Downloads\Projetv3\DS\obj\Debug\DS.dll
+C:\Users\sam\Downloads\Projetv3\DS\obj\Debug\DS.pdb
+C:\Users\spiderman\Desktop\Projetv3\DS\bin\Debug\DS.dll
+C:\Users\spiderman\Desktop\Projetv3\DS\bin\Debug\DS.pdb
+C:\Users\spiderman\Desktop\Projetv3\DS\bin\Debug\BE.dll
+C:\Users\spiderman\Desktop\Projetv3\DS\bin\Debug\BE.pdb
+C:\Users\spiderman\Desktop\Projetv3\DS\obj\Debug\DS.csprojResolveAssemblyReference.cache
+C:\Users\spiderman\Desktop\Projetv3\DS\obj\Debug\DS.dll
+C:\Users\spiderman\Desktop\Projetv3\DS\obj\Debug\DS.pdb
+C:\Users\sam\Desktop\Projet_HELEK1\DS\bin\Debug\DS.dll
+C:\Users\sam\Desktop\Projet_HELEK1\DS\bin\Debug\DS.pdb
+C:\Users\sam\Desktop\Projet_HELEK1\DS\bin\Debug\BE.dll
+C:\Users\sam\Desktop\Projet_HELEK1\DS\bin\Debug\BE.pdb
+C:\Users\sam\Desktop\Projet_HELEK1\DS\obj\Debug\DS.csprojResolveAssemblyReference.cache
+C:\Users\sam\Desktop\Projet_HELEK1\DS\obj\Debug\DS.dll
+C:\Users\sam\Desktop\Projet_HELEK1\DS\obj\Debug\DS.pdb
+H:\projet02v3\projet02v3\DS\bin\Debug\DS.dll
+H:\projet02v3\projet02v3\DS\bin\Debug\DS.pdb
+H:\projet02v3\projet02v3\DS\bin\Debug\BE.dll
+H:\projet02v3\projet02v3\DS\bin\Debug\BE.pdb
+H:\projet02v3\projet02v3\DS\obj\Debug\DS.csprojResolveAssemblyReference.cache
+H:\projet02v3\projet02v3\DS\obj\Debug\DS.dll
+H:\projet02v3\projet02v3\DS\obj\Debug\DS.pdb
+C:\Users\sam\Downloads\projet02v3\DS\bin\Debug\DS.dll
+C:\Users\sam\Downloads\projet02v3\DS\bin\Debug\DS.pdb
+C:\Users\sam\Downloads\projet02v3\DS\bin\Debug\BE.dll
+C:\Users\sam\Downloads\projet02v3\DS\bin\Debug\BE.pdb
+C:\Users\sam\Downloads\projet02v3\DS\obj\Debug\DS.csprojResolveAssemblyReference.cache
+C:\Users\sam\Downloads\projet02v3\DS\obj\Debug\DS.dll
+C:\Users\sam\Downloads\projet02v3\DS\obj\Debug\DS.pdb
+C:\Users\sam\Desktop\projet02v4\DS\bin\Debug\DS.dll
+C:\Users\sam\Desktop\projet02v4\DS\bin\Debug\DS.pdb
+C:\Users\sam\Desktop\projet02v4\DS\bin\Debug\BE.dll
+C:\Users\sam\Desktop\projet02v4\DS\bin\Debug\BE.pdb
+C:\Users\sam\Desktop\projet02v4\DS\obj\Debug\DS.csprojResolveAssemblyReference.cache
+C:\Users\sam\Desktop\projet02v4\DS\obj\Debug\DS.dll
+C:\Users\sam\Desktop\projet02v4\DS\obj\Debug\DS.pdb
+C:\Users\spiderman\Desktop\PROJET DE MERDE\DS\bin\Debug\DS.dll
+C:\Users\spiderman\Desktop\PROJET DE MERDE\DS\bin\Debug\DS.pdb
+C:\Users\spiderman\Desktop\PROJET DE MERDE\DS\bin\Debug\BE.dll
+C:\Users\spiderman\Desktop\PROJET DE MERDE\DS\bin\Debug\BE.pdb
+C:\Users\spiderman\Desktop\PROJET DE MERDE\DS\obj\Debug\DS.csprojResolveAssemblyReference.cache
+C:\Users\spiderman\Desktop\PROJET DE MERDE\DS\obj\Debug\DS.dll
+C:\Users\spiderman\Desktop\PROJET DE MERDE\DS\obj\Debug\DS.pdb
+C:\Users\epartouc\Desktop\PROJET\PROJET DE MERDE\DS\bin\Debug\DS.dll
+C:\Users\epartouc\Desktop\PROJET\PROJET DE MERDE\DS\bin\Debug\DS.pdb
+C:\Users\epartouc\Desktop\PROJET\PROJET DE MERDE\DS\bin\Debug\BE.dll
+C:\Users\epartouc\Desktop\PROJET\PROJET DE MERDE\DS\bin\Debug\BE.pdb
+C:\Users\epartouc\Desktop\PROJET\PROJET DE MERDE\DS\obj\Debug\DS.csprojResolveAssemblyReference.cache
+C:\Users\epartouc\Desktop\PROJET\PROJET DE MERDE\DS\obj\Debug\DS.dll
+C:\Users\epartouc\Desktop\PROJET\PROJET DE MERDE\DS\obj\Debug\DS.pdb
+C:\Users\spiderman\Desktop\PROJET\PROJET DE MERDE\DS\bin\Debug\DS.dll
+C:\Users\spiderman\Desktop\PROJET\PROJET DE MERDE\DS\bin\Debug\DS.pdb
+C:\Users\spiderman\Desktop\PROJET\PROJET DE MERDE\DS\bin\Debug\BE.dll
+C:\Users\spiderman\Desktop\PROJET\PROJET DE MERDE\DS\bin\Debug\BE.pdb
+C:\Users\spiderman\Desktop\PROJET\PROJET DE MERDE\DS\obj\Debug\DS.csprojResolveAssemblyReference.cache
+C:\Users\spiderman\Desktop\PROJET\PROJET DE MERDE\DS\obj\Debug\DS.dll
+C:\Users\spiderman\Desktop\PROJET\PROJET DE MERDE\DS\obj\Debug\DS.pdb
+C:\Users\spiderman\Desktop\PROJET\PROJET\DS\bin\Debug\DS.dll
+C:\Users\spiderman\Desktop\PROJET\PROJET\DS\bin\Debug\DS.pdb
+C:\Users\spiderman\Desktop\PROJET\PROJET\DS\bin\Debug\BE.dll
+C:\Users\spiderman\Desktop\PROJET\PROJET\DS\bin\Debug\BE.pdb
+C:\Users\spiderman\Desktop\PROJET\PROJET\DS\obj\Debug\DS.csprojResolveAssemblyReference.cache
+C:\Users\spiderman\Desktop\PROJET\PROJET\DS\obj\Debug\DS.dll
+C:\Users\spiderman\Desktop\PROJET\PROJET\DS\obj\Debug\DS.pdb

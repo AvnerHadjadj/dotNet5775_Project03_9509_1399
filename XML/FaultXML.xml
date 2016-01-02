@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<faults>
+  <fault>
+    <idNumber>1</idNumber>
+    <description>moteur</description>
+    <responsible>true</responsible>
+    <repairCost>1500</repairCost>
+    <preferredGarage>har nof</preferredGarage>
+  </fault>
+  <fault>
+    <idNumber>2</idNumber>
+    <description>freins avant</description>
+    <responsible>True</responsible>
+    <repairCost>700</repairCost>
+    <preferredGarage>har nof</preferredGarage>
+  </fault>
+</faults>

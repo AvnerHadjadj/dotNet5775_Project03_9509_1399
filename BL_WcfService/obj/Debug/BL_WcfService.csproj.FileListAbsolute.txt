@@ -1,0 +1,24 @@
+C:\Users\spiderman\Desktop\PROJET\PROJET DE MERDE\BL_WcfService\obj\Debug\BL_WcfService.csprojResolveAssemblyReference.cache
+C:\Users\spiderman\Desktop\PROJET\PROJET DE MERDE\BL_WcfService\bin\Debug\BL_WcfService.dll.config
+C:\Users\spiderman\Desktop\PROJET\PROJET DE MERDE\BL_WcfService\bin\Debug\BL_WcfService.dll
+C:\Users\spiderman\Desktop\PROJET\PROJET DE MERDE\BL_WcfService\bin\Debug\BL_WcfService.pdb
+C:\Users\spiderman\Desktop\PROJET\PROJET DE MERDE\BL_WcfService\bin\Debug\BE.dll
+C:\Users\spiderman\Desktop\PROJET\PROJET DE MERDE\BL_WcfService\bin\Debug\DAL.dll
+C:\Users\spiderman\Desktop\PROJET\PROJET DE MERDE\BL_WcfService\bin\Debug\DS.dll
+C:\Users\spiderman\Desktop\PROJET\PROJET DE MERDE\BL_WcfService\bin\Debug\BE.pdb
+C:\Users\spiderman\Desktop\PROJET\PROJET DE MERDE\BL_WcfService\bin\Debug\DAL.pdb
+C:\Users\spiderman\Desktop\PROJET\PROJET DE MERDE\BL_WcfService\bin\Debug\DS.pdb
+C:\Users\spiderman\Desktop\PROJET\PROJET DE MERDE\BL_WcfService\obj\Debug\BL_WcfService.dll
+C:\Users\spiderman\Desktop\PROJET\PROJET DE MERDE\BL_WcfService\obj\Debug\BL_WcfService.pdb
+C:\Users\spiderman\Desktop\PROJET\PROJET\BL_WcfService\bin\Debug\BL_WcfService.dll.config
+C:\Users\spiderman\Desktop\PROJET\PROJET\BL_WcfService\bin\Debug\BL_WcfService.dll
+C:\Users\spiderman\Desktop\PROJET\PROJET\BL_WcfService\bin\Debug\BL_WcfService.pdb
+C:\Users\spiderman\Desktop\PROJET\PROJET\BL_WcfService\bin\Debug\BE.dll
+C:\Users\spiderman\Desktop\PROJET\PROJET\BL_WcfService\bin\Debug\DAL.dll
+C:\Users\spiderman\Desktop\PROJET\PROJET\BL_WcfService\bin\Debug\DS.dll
+C:\Users\spiderman\Desktop\PROJET\PROJET\BL_WcfService\bin\Debug\BE.pdb
+C:\Users\spiderman\Desktop\PROJET\PROJET\BL_WcfService\bin\Debug\DAL.pdb
+C:\Users\spiderman\Desktop\PROJET\PROJET\BL_WcfService\bin\Debug\DS.pdb
+C:\Users\spiderman\Desktop\PROJET\PROJET\BL_WcfService\obj\Debug\BL_WcfService.csprojResolveAssemblyReference.cache
+C:\Users\spiderman\Desktop\PROJET\PROJET\BL_WcfService\obj\Debug\BL_WcfService.dll
+C:\Users\spiderman\Desktop\PROJET\PROJET\BL_WcfService\obj\Debug\BL_WcfService.pdb

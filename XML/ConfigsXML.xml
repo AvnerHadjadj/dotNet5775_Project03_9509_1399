@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<autoincrements>
+  <autoincrement>
+    <numberRenting>6</numberRenting>
+    <numberClient>11</numberClient>
+    <numberCar>6</numberCar>
+    <numberFault>2</numberFault>
+    <numberCarFault>4</numberCarFault>
+  </autoincrement>
+</autoincrements>

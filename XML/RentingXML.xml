@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rentings>
+  <renting>
+    <idNumber>1</idNumber>
+    <rentalStartDate>27/01/2015 23:40:46</rentalStartDate>
+    <rentalEndDate>28/01/2015 00:08:20</rentalEndDate>
+    <driversAllowed>
+      <idClient1>3</idClient1>
+      <idClient2>5</idClient2>
+    </driversAllowed>
+    <carId>1</carId>
+    <driversNumber>0</driversNumber>
+    <kilometersAtRentalStart>15</kilometersAtRentalStart>
+    <kilometersAtRentalEnd>75</kilometersAtRentalEnd>
+    <returnedWithFault>False</returnedWithFault>
+    <rentalPriceDaily>1</rentalPriceDaily>
+  </renting>
+  <renting>
+    <idNumber>2</idNumber>
+    <rentalStartDate>28/01/2015 00:08:55</rentalStartDate>
+    <rentalEndDate>28/01/2015 01:28:34</rentalEndDate>
+    <driversAllowed>
+      <idClient1>5</idClient1>
+      <idClient2>0</idClient2>
+    </driversAllowed>
+    <carId>3</carId>
+    <driversNumber>0</driversNumber>
+    <kilometersAtRentalStart>46</kilometersAtRentalStart>
+    <kilometersAtRentalEnd>246</kilometersAtRentalEnd>
+    <returnedWithFault>False</returnedWithFault>
+    <rentalPriceDaily>3</rentalPriceDaily>
+  </renting>
+  <carfault>
+    <idNumber>1</idNumber>
+    <carId>3</carId>
+    <faultId>1</faultId>
+    <faultDate>2015-01-28T01:08:55.7934+02:00</faultDate>
+  </carfault>
+  <renting>
+    <idNumber>5</idNumber>
+    <rentalStartDate>28/01/2015 12:07:44</rentalStartDate>
+    <rentalEndDate>18/07/2015 12:30:52</rentalEndDate>
+    <driversAllowed>
+      <idClient1>3</idClient1>
+      <idClient2>0</idClient2>
+    </driversAllowed>
+    <carId>3</carId>
+    <driversNumber>0</driversNumber>
+    <kilometersAtRentalStart>46</kilometersAtRentalStart>
+    <kilometersAtRentalEnd>46</kilometersAtRentalEnd>
+    <returnedWithFault>False</returnedWithFault>
+    <rentalPriceDaily>3420</rentalPriceDaily>
+  </renting>
+  <renting>
+    <idNumber>6</idNumber>
+    <rentalStartDate>29/01/2015 12:07:56</rentalStartDate>
+    <rentalEndDate>31/12/9999 23:59:59</rentalEndDate>
+    <driversAllowed>
+      <idClient1>6</idClient1>
+      <idClient2>0</idClient2>
+    </driversAllowed>
+    <carId>3</carId>
+    <driversNumber>1</driversNumber>
+    <kilometersAtRentalStart>46</kilometersAtRentalStart>
+    <kilometersAtRentalEnd>0</kilometersAtRentalEnd>
+    <returnedWithFault>False</returnedWithFault>
+    <rentalPriceDaily>0</rentalPriceDaily>
+  </renting>
+</rentings>

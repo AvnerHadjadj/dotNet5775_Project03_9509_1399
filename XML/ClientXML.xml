@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clients>
+  <client>
+    <idNumber>3</idNumber>
+    <idTeoudaZeout>1489562</idTeoudaZeout>
+    <address>5 rue ytryr</address>
+    <name>sam nkaoua</name>
+    <birthDate>2015-01-21T18:56:02</birthDate>
+    <licenseDrivingDate>2015-01-27T18:56:02.91+02:00</licenseDrivingDate>
+    <creditCartNumber>1234 7895 6541</creditCartNumber>
+    <faultResponsible>0</faultResponsible>
+  </client>
+  <client>
+    <idNumber>5</idNumber>
+    <idTeoudaZeout>45678915</idTeoudaZeout>
+    <address>4 allee du parc</address>
+    <name>david azria</name>
+    <birthDate>2015-01-27T20:09:21.986+02:00</birthDate>
+    <licenseDrivingDate>2015-01-27T20:09:22.006+02:00</licenseDrivingDate>
+    <creditCartNumber>1598 4826 7856</creditCartNumber>
+    <faultResponsible>0</faultResponsible>
+  </client>
+  <client>
+    <idNumber>6</idNumber>
+    <idTeoudaZeout>12345678</idTeoudaZeout>
+    <address>59 shahal jerusalem</address>
+    <name>david cohen</name>
+    <birthDate>1980-09-01T11:11:51</birthDate>
+    <licenseDrivingDate>2012-07-19T11:11:51</licenseDrivingDate>
+    <creditCartNumber>7894 5612 3654</creditCartNumber>
+    <faultResponsible>0</faultResponsible>
+  </client>
+  <client>
+    <idNumber>8</idNumber>
+    <idTeoudaZeout>78945612</idTeoudaZeout>
+    <address>marseille 7 place</address>
+    <name>mika ellezmi</name>
+    <birthDate>1992-02-12T12:29:34</birthDate>
+    <licenseDrivingDate>2015-01-15T12:29:34</licenseDrivingDate>
+    <creditCartNumber>1478 2589 3692</creditCartNumber>
+    <faultResponsible>0</faultResponsible>
+  </client>
+  <client>
+    <idNumber>9</idNumber>
+    <idTeoudaZeout>4567894</idTeoudaZeout>
+    <address>5 rehov heller</address>
+    <name>yonathan cassar</name>
+    <birthDate>1992-09-01T12:49:52</birthDate>
+    <licenseDrivingDate>2014-08-08T12:49:52</licenseDrivingDate>
+    <creditCartNumber>7596 4568 8451</creditCartNumber>
+    <faultResponsible>0</faultResponsible>
+  </client>
+</clients>

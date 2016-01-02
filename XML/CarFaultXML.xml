@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<carfaults>
+  <carfault>
+    <idNumber>1</idNumber>
+    <carId>6</carId>
+    <faultId>2</faultId>
+    <faultDate>28/01/2015 13:26:41</faultDate>
+  </carfault>
+  <carfault>
+    <idNumber>3</idNumber>
+    <carId>4</carId>
+    <faultId>2</faultId>
+    <faultDate>2015-01-28T13:27:15.5634+02:00</faultDate>
+  </carfault>
+  <carfault>
+    <idNumber>4</idNumber>
+    <carId>3</carId>
+    <faultId>2</faultId>
+    <faultDate>2015-01-28T13:32:56.0742+02:00</faultDate>
+  </carfault>
+</carfaults>
